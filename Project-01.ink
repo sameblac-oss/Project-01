@@ -17,3 +17,76 @@
 
 */
 
+VAR health = 6
+VAR clothing = 0
+VAR intelligence = 10
+VAR hunger = 1
+VAR dehydration = 2
+VAR flashlight = 0
+
+-> woods_entrance
+
+=== woods_entrance ===
+You are at the entrance to the woods. {not flashlight_pickup:There is a flashlight in your backpack.} The woods goes north, east, and west. 
++ [Take the north path] -> north_path
++ [Take the east path] -> east_path
++ [Take the west path] -> west_path
+* [Pick up the flashlight] -> flashlight_pickup
+-> END
+
+=== flashlight_pickup ===
+You now have a flashlight. You can see in the woods. 
+* [Go Back] -> woods_entrance
+-> END
+
+
+== north_path ==
+You enter the woods and take the north path. It is very dark, you can't see anything.
+* {flashlight_pickup} [Use Flashlight] -> north_path_lit
++ [Go Back] -> woods_entrance
+-> END
+
+=== north_path_lit ===
+The north path is lit. You see a sleeping bear. You have high intelligence and realize the danger. You turn around and go back.
++ [Go Back] -> woods_entrance
+-> END
+
+=== east_path ===
+You enter the woods and take the east path. It is very dark, you can't see anything.
+* {flashlight_pickup} [Use Flashlight] -> east_path_lit
++ [Go Back] -> woods_entrance
+-> END
+
+=== east_path_lit ===
+The east path is lit. You see a river bank. 
++ [Go to river] -> river_bank
++ [Go Back] -> woods_entrance
+-> END
+
+=== west_path ===
+You enter the woods and take the west path. It is very dark, you can't see anything. 
+* {flashlight_pickup} [Use Flashlight] -> west_path_lit
++ [Go back] -> woods_entrance
+-> END
+
+=== west_path_lit ===
+The west path is lit. You see an abandoned camp. 
++ [Go to abandoned camp] -> abandoned_camp
+-> END
+
+=== river_bank ===
+You continue to the bank of the river. You are very dehydrated and drink the water. It is very refreshing and relives your thirst. 
++ [Go back] -> woods_entrance
+-> END
+
+=== abandoned_camp ===
+You continue to the abandoned camp and find a cooked rabbit that seems to have been leftover. You are very hungry and decide to eat it. It is delicious 
++ [Go back] -> woods_entrance
+-> END
+
+
+
+
+
+
+
