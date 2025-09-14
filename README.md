@@ -1,7 +1,7 @@
 # Project-01
 
-# Your Name
+# Sam Black
 
-# Your Github username
+# sameblac-oss
 
 # List the things you added for points
