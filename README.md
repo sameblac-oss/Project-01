@@ -8,6 +8,6 @@
 
 # Starting in line 34 and continuing on in line 37-38, I gave the player the option to pickup a flashlight. Picking up this item changes the state of the game for the player, as they are able to progress and continue down the different paths if they decide to pick up the flashlight. [+1]
 
-# In lines 37, 43, 49, 54, 60, 66, 72, 77, 82, there are knots located. 9 knots total [+2]
+# In lines 29, 37, 43, 49, 54, 60, 66, 72, 77, 82, there are knots located. 10 knots total [+2]
 
 
